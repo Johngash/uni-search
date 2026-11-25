@@ -191,7 +191,7 @@ const createDummyCourses = (universityName = "") => {
   return shuffledCourses.slice(0, 8);
 };
 
-const universities = [
+export const universities = [
   // PUBLIC UNIVERSITIES
   {
     name: "University of Nairobi",

@@ -5,17 +5,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
-  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <nav>
-    <input type="text" placeholder="Search uni">
-    <a href="">Favourites</a>
+    <input class="uni-search" type="text" placeholder="Search uni">
+    <button class="search-btn">Search</button>
+    <select class="uni-type-filter" aria-label="Filter universities by type">
+      <option value="all">All universities</option>
+      <option value="public">Public universities</option>
+      <option value="private">Private universities</option>
+    </select>
+    <a href="favourites.html">Favourites</a>
   </nav>
   <section class="main-body">
 
   </section>
+  <script src="mainpage.js" type="module"></script>
 </body>
 
 </html>

@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #222;
+  background: #fff;
+}
+
+.auth-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #fff;
+}
+
+.auth-card {
+  width: min(100% - 32px, 390px);
+  padding: 36px 28px 28px;
+  text-align: center;
+}
+
+.profile-icon {
+  width: 58px;
+  height: 58px;
+  margin: 0 auto 12px;
+  display: grid;
+  place-items: center;
+  border: 2px solid #8ed9b4;
+  border-radius: 50%;
+  color: #70c995;
+  font-size: 36px;
+  line-height: 1;
+  box-shadow: 0 0 0 10px #f2fbf5;
+}
+
+.auth-card h1 {
+  margin: 18px 0 4px;
+  font-size: 23px;
+}
+
+.auth-subtitle,
+.auth-message,
+.switch-statement {
+  color: #999;
+  font-size: 12px;
+}
+
+.auth-subtitle {
+  margin: 0 0 22px;
+}
+
+.sign-in-form {
+  display: grid;
+  gap: 10px;
+  text-align: left;
+}
+
+.input-group {
+  min-height: 45px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 0 12px;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  color: #8ed9b4;
+  box-shadow: 0 2px 8px #eee;
+}
+
+.input-group input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  font-size: 12px;
+}
+
+.switch-login-btn {
+  color: #f05a3b;
+}
+
+.btnsubmit {
+  width: 100%;
+  padding: 13px;
+  border: 0;
+  border-radius: 8px;
+  background: #f45132;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 5px 12px #f4513235;
+}
+
+.btnsubmit:hover {
+  background: #de4327;
+}
+
+.auth-message {
+  min-height: 15px;
+  margin: 0;
+  text-align: center;
+}
+
+.auth-message.error {
+  color: #dc3d2b;
+}
+
+.switch-statement {
+  margin-top: 18px;
+}
+
+.switch-login-btn {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 18px 5%;
+}
+
+nav a {
+  color: #f45132;
+}
+
+.uni-search,
+.uni-type-filter,
+.search-btn {
+  min-height: 34px;
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.search-btn {
+  cursor: pointer;
+}
+
+.main-body,
+.favourites-body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 16px;
+  padding: 24px 5%;
+}
+
+.university-card {
+  position: relative;
+  padding: 18px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #eee;
+}
+
+.uni-name {
+  margin: 0;
+  padding-right: 30px;
+  font-weight: 700;
+}
+
+.fav {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  border: 0;
+  background: transparent;
+  color: #f45132;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.empty-state {
+  grid-column: 1 / -1;
+  color: #888;
+  text-align: center;
+}
