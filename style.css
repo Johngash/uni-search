@@ -111,7 +111,12 @@ nav {
 }
 
 nav a {
-  color: #f45132;
+  color: #fff;
+  background: #f45132;
+  font-weight: bolder;
+  text-decoration: none;
+  padding: 1.5vh 2vw;
+  border-radius: 6px;
 }
 
 .uni-search,
@@ -140,7 +145,7 @@ nav a {
   position: relative;
   padding: 18px;
   border: 1px solid #eee;
-  /* border-radius: 10px; */
+  cursor: pointer;
 }
 
 

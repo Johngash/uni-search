@@ -86,7 +86,7 @@ function applyFilters() {
   displayUniversities(results);
 }
 
-displayUniversities(universities);
+displayUniversities(universities.filter(item => item.type === "public").slice(0, 10));
 searchBtn.addEventListener("click", applyFilters);
 typeFilter.addEventListener("change", applyFilters);
 uniSearch.addEventListener("keydown", (event) => {
