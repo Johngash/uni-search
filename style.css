@@ -21,19 +21,6 @@ body {
   text-align: center;
 }
 
-.profile-icon {
-  width: 58px;
-  height: 58px;
-  margin: 0 auto 12px;
-  display: grid;
-  place-items: center;
-  border: 2px solid #8ed9b4;
-  border-radius: 50%;
-  color: #70c995;
-  font-size: 36px;
-  line-height: 1;
-  box-shadow: 0 0 0 10px #f2fbf5;
-}
 
 .auth-card h1 {
   margin: 18px 0 4px;
@@ -66,7 +53,6 @@ body {
   border: 1px solid #e5e5e5;
   border-radius: 8px;
   color: #8ed9b4;
-  box-shadow: 0 2px 8px #eee;
 }
 
 .input-group input {
@@ -89,7 +75,6 @@ body {
   color: #fff;
   font-weight: 700;
   cursor: pointer;
-  box-shadow: 0 5px 12px #f4513235;
 }
 
 .btnsubmit:hover {
@@ -146,7 +131,7 @@ nav a {
 .main-body,
 .favourites-body {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(50vw, 1fr));
   gap: 16px;
   padding: 24px 5%;
 }
@@ -155,7 +140,11 @@ nav a {
   position: relative;
   padding: 18px;
   border: 1px solid #eee;
-  border-radius: 10px;
+  /* border-radius: 10px; */
+}
+
+
+.university-card:hover {
   box-shadow: 0 2px 8px #eee;
 }
 
